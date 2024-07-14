@@ -137,14 +137,11 @@ const Home = () => {
             Web Developer
           </h1>
 
-          <p
-            data-aos="fade-up"
-            className="text-center text-lg md:text-xl lg:text-xl mb-4"
-          >
-            Hey, looking to hire a web developer for your
+          <p data-aos="fade-up" className=" text-lg md:text-xl lg:text-xl mb-4">
+            Hey, looking to hire a web developer for your business?
             <br />
-            business? Let's share hands. Dedicated to crafting standout and
-            eye-catching projects.
+            Let's share hands. Dedicated to crafting standout and eye-catching
+            projects.
           </p>
 
           <button
