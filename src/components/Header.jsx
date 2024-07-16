@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,7 +7,6 @@ import {
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-// import { Link } from "react-router-dom";
 import "../pages/effect.css";
 import "./headingEffect.css";
 
@@ -24,7 +22,7 @@ const Header = () => {
         isSidebarVisible ? "show-sidebar" : ""
       } sticky top-0 z-50`}
     >
-      <div className="bg-gradient-custom  text-gray-100 py-2 ">
+      <div className="bg-gradient-custom text-gray-100 py-2">
         <div className="flex justify-between items-center mx-auto max-w-screen-xl px-4">
           <div className="flex space-x-4">
             <a
@@ -101,7 +99,7 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`fixed top-0 left-0 w-full h-full  bg-opacity-90 transform ${
+        className={`fixed top-0 left-0 w-full h-full bg-opacity-95 transform bg-slate-900 ${
           isSidebarVisible ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
@@ -123,35 +121,35 @@ const Header = () => {
           <div className="flex flex-col text-center space-y-10">
             <a
               href="#homesection"
-              className="text-blue-600 hover: mt-6"
+              className="text-gray-200 hover: mt-6"
               onClick={hideSidebar}
             >
               Home
             </a>
             <a
               href="#aboutsection"
-              className="text-blue-600 hover:"
+              className="text-gray-200 hover:"
               onClick={hideSidebar}
             >
               About
             </a>
             <a
               href="#projectsection"
-              className="text-blue-600 hover:"
+              className="text-gray-200 hover:"
               onClick={hideSidebar}
             >
               Projects
             </a>
             <a
               href="#skillsection"
-              className="text-blue-600 hover:"
+              className="text-gray-200 hover:"
               onClick={hideSidebar}
             >
               Skills
             </a>
             <a
               href="#contactsection"
-              className="text-blue-600 hover:"
+              className="text-gray-200 hover:"
               onClick={hideSidebar}
             >
               Contact Me
