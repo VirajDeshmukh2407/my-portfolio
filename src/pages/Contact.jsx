@@ -16,6 +16,7 @@ import emailjs from "emailjs-com";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import image from "../assests/image.jpg";
+import "./effect.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -74,7 +75,7 @@ const Contact = () => {
   return (
     <div
       id="contactsection"
-      className="bg-slate-950 text-white container mx-auto px-4 py-8"
+      className=" text-white container mx-auto px-4 py-8 bg-gradient-custom glow-effect"
       data-aos="fade-up"
     >
       <h1 className="text-2xl font-bold mb-2 px-5 text-center">Contact Me</h1>
@@ -82,7 +83,7 @@ const Contact = () => {
       <div className="flex flex-col md:flex-row">
         {/* Left Section with Contact Me */}
         <div className="md:w-1/2 relative z-10" data-aos="fade-up">
-          <div className="bg-slate-950 shadow-lg rounded-2xl p-8">
+          <div className=" shadow-lg rounded-2xl p-8">
             <img src={image} alt="Contact" className="mb-4 rounded-3xl" />
             <h2 className="mb-4 text-lg text-white">Viraj Deshmukh</h2>
             <div className="flex items-center mb-2">
@@ -100,7 +101,7 @@ const Contact = () => {
 
             <div className="mt-4 contact-links">
               <a
-                href="https://www.linkedin.com/viraj-deshmukh-513352292"
+                href="https://www.linkedin.com/in/viraj-deshmukh-513352292/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link px-2 hover:text-blue-500 transition-colors duration-100"
@@ -114,7 +115,7 @@ const Contact = () => {
                 />
               </a>
               <a
-                href="https://www.twitter.com/VirajDe95983214"
+                href="https://www.x.com/veeraj05"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link px-2 hover:text-blue-500 transition-colors duration-300"
@@ -138,7 +139,7 @@ const Contact = () => {
 
         {/* Right Section with Form */}
         <div className="md:w-1/2 md:ml-4 relative z-0">
-          <div className="bg-slate-950 text-white rounded-lg p-6">
+          <div className=" text-white rounded-lg p-6">
             <div className="contact-container">
               <div className="contact-details">
                 <form onSubmit={handleSubmit}>
@@ -146,7 +147,7 @@ const Contact = () => {
                     <input
                       type="text"
                       placeholder="First Name"
-                      className="bg-gray-800 text-white px-4 py-2 rounded-md w-full"
+                      className="bg-transparent glowing-border text-white px-4 py-2 rounded-md w-full"
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleChange}
@@ -156,7 +157,7 @@ const Contact = () => {
                     <input
                       type="text"
                       placeholder="Last Name"
-                      className="bg-gray-800 text-white px-4 py-2 rounded-md w-full"
+                      className="bg-transparent glowing-border text-white px-4 py-2 rounded-md w-full"
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleChange}
@@ -166,7 +167,7 @@ const Contact = () => {
                     <input
                       type="email"
                       placeholder="Email"
-                      className="bg-gray-800 text-white px-4 py-2 rounded-md w-full"
+                      className="bg-transparent glowing-border text-white px-4 py-2 rounded-md w-full"
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
@@ -175,7 +176,7 @@ const Contact = () => {
                   <div className="mb-4">
                     <textarea
                       placeholder="Your Message..."
-                      className="bg-gray-800 text-white px-4 py-2 rounded-md w-full h-32"
+                      className="bg-transparent glowing-border text-white px-4 py-2 rounded-md w-full h-32"
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
@@ -183,7 +184,7 @@ const Contact = () => {
                   </div>
                   <button
                     type="submit"
-                    className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
+                    className=" glowing-border text-gray-300 px-4 py-2 rounded-md"
                   >
                     Send Message
                   </button>

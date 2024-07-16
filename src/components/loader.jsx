@@ -13,10 +13,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
-
+import "../pages/effect.css";
 const LoadingSpinner = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-slate-500 to-slate-900">
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-r glowing-effect from-slate-500 to-slate-900">
       <div className="relative">
         <div className="absolute inset-0 flex items-center justify-center">
           <FontAwesomeIcon

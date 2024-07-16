@@ -9,6 +9,8 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 // import { Link } from "react-router-dom";
+import "../pages/effect.css";
+import "./headingEffect.css";
 
 const Header = () => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
@@ -22,27 +24,27 @@ const Header = () => {
         isSidebarVisible ? "show-sidebar" : ""
       } sticky top-0 z-50`}
     >
-      <div className="bg-slate-950 text-white py-2 ">
+      <div className="bg-gradient-custom  text-gray-100 py-2 ">
         <div className="flex justify-between items-center mx-auto max-w-screen-xl px-4">
           <div className="flex space-x-4">
             <a
-              href="https://www.linkedin.com/viraj-deshmukh-513352292"
+              href="https://www.linkedin.com/in/viraj-deshmukh-513352292/"
               target="_blank"
-              className="text-white hover:text-blue-500 transition-colors duration-300"
+              className="neon-text hover:text-blue-500 transition-colors duration-300"
             >
               <FontAwesomeIcon icon={faLinkedin} className="text-lg" />
             </a>
             <a
-              href="https://www.twitter.com/VirajDe95983214"
+              href="https://www.twitter.com/veeraj05/"
               target="_blank"
-              className="text-white hover:text-blue-500 transition-colors duration-300"
+              className="neon-text hover:text-blue-500 transition-colors duration-300"
             >
               <FontAwesomeIcon icon={faTwitter} className="text-lg" />
             </a>
             <a
               href="https://www.github.com/VirajDeshmukh2407"
               target="_blank"
-              className="text-white hover:text-blue-500 transition-colors duration-300"
+              className="neon-text hover:text-blue-500 transition-colors duration-300"
             >
               <FontAwesomeIcon icon={faGithub} className="text-lg" />
             </a>
@@ -99,7 +101,7 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 transform ${
+        className={`fixed top-0 left-0 w-full h-full  bg-opacity-90 transform ${
           isSidebarVisible ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >

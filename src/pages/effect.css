@@ -1,0 +1,36 @@
+.glow-effect::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(square, rgba(98, 53, 139, 0.4), transparent 60%);
+    transform: translate(-50%, -50%);
+    animation: glow 10s infinite alternate;
+    z-index: 0; 
+  }
+  
+  @keyframes glow {
+    0% {
+      transform: translate(-50%, -50%) scale(0.7);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+  }
+  
+
+  .glowing-border {
+    border: 2px solid #b42fb4af;
+    padding: 10px;
+    transition: box-shadow 0.3s ease-in;
+  }
+  
+  .glowing-border:hover {
+    box-shadow: 0 0 10px #a02da0, 0 0 20px #9e2d9e, 0 0 20px #b823b8ec;
+  }
+
+  .bg-gradient-custom {
+    background: linear-gradient(to right, #1e293b, #0f172a);
+  }

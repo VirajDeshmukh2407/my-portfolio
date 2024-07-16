@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import "./effect.css";
 const About = () => {
   useEffect(() => {
     AOS.init({
@@ -12,7 +12,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="bg-slate-950 text-white container mx-auto px-4 py-8">
+    <div className="bg-gradient-custom glow-effect text-white container mx-auto px-4 py-8">
       <div className="">
         <div id="aboutsection" className="About-container">
           <h1
