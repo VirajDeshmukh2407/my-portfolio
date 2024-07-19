@@ -42,13 +42,13 @@ const Home = () => {
           >
             Hi,
             <br />
-            <span data-aos="fade-right" className="aos-animate">
+            <span data-aos="fade-right" className="aos-animate text-orange-500">
               I'm Viraj
             </span>
             <br />
             An Indian Based
             <br />
-            Web Developer
+            <span className="text-orange-500">Web Developer</span>
           </h1>
 
           <p data-aos="fade-up" className=" text-lg md:text-xl lg:text-xl mb-4">

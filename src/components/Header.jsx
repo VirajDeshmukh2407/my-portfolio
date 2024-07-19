@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebook,
   faTwitter,
-  faInstagram,
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
@@ -29,12 +27,14 @@ const Header = () => {
               href="https://www.linkedin.com/in/viraj-deshmukh-513352292/"
               target="_blank"
               className="neon-text hover:text-blue-500 transition-colors duration-300"
+              rel="noreferrer noopener"
             >
               <FontAwesomeIcon icon={faLinkedin} className="text-lg" />
             </a>
             <a
               href="https://www.twitter.com/veeraj05/"
               target="_blank"
+              rel="noreferrer noopener"
               className="neon-text hover:text-blue-500 transition-colors duration-300"
             >
               <FontAwesomeIcon icon={faTwitter} className="text-lg" />
@@ -43,6 +43,7 @@ const Header = () => {
               href="https://www.github.com/VirajDeshmukh2407"
               target="_blank"
               className="neon-text hover:text-blue-500 transition-colors duration-300"
+              rel="noreferrer noopener"
             >
               <FontAwesomeIcon icon={faGithub} className="text-lg" />
             </a>
