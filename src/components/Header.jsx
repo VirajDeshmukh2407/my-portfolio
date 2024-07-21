@@ -51,31 +51,31 @@ const Header = () => {
           <div className="hidden md:flex space-x-6">
             <a
               href="#homesection"
-              className="hover:text-blue-600 transform hover:scale-104 transition duration-100"
+              className="hover:text-orange-500 transform hover:scale-104 transition duration-100"
             >
               Home
             </a>
             <a
               href="#aboutsection"
-              className="hover:text-blue-600 transform hover:scale-104 transition duration-100"
+              className="hover:text-orange-500 transform hover:scale-104 transition duration-100"
             >
               About
             </a>
             <a
               href="#skillsection"
-              className="hover:text-blue-600 transform hover:scale-104 transition duration-100"
+              className="hover:text-orange-500 transform hover:scale-104 transition duration-100"
             >
               Skills
             </a>
             <a
               href="#projectsection"
-              className="hover:text-blue-600 transform hover:scale-104 transition duration-100"
+              className="hover:text-orange-500 transform hover:scale-104 transition duration-100"
             >
               Projects
             </a>
             <a
               href="#contactsection"
-              className="hover:text-blue-600 transform hover:scale-104 transition duration-100"
+              className="hover:text-orange-500 transform hover:scale-104 transition duration-100"
             >
               Contact Me
             </a>
