@@ -25,6 +25,7 @@ const Skills = () => {
     AOS.init({
       duration: 2000,
       once: true,
+      mirror: true,
     });
   }, []);
 
@@ -34,7 +35,9 @@ const Skills = () => {
       className="bg-gradient-custom glow-effect text-white py-12 px-4 mx-auto container"
     >
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold">My Skills</h1>
+        <h1 className="text-4xl font-bold">
+          My <span className="text-orange-500">Skills</span>
+        </h1>
       </div>
       <div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"

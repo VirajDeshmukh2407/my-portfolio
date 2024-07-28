@@ -19,13 +19,13 @@ const About = () => {
             className="text-4xl font-bold mb-8 text-center"
             data-aos="fade-up"
           >
-            About me
+            About <span className="text-orange-500">Me</span>
           </h1>
           <div className="About-description">
             <h1 className="text-2xl mb-8 text-center" data-aos="fade-up">
               "BE CONSISTENT, BE YOU!"
             </h1>
-            <p className="text-lg  text-center" data-aos="fade-up">
+            <p className="text-lg px-3" data-aos="fade-up">
               Hey there, I'm Viraj, an IT enthusiast currently in my Third year
               of undergraduate studies. I bring a solid foundation in web
               development, with expertise in HTML, CSS,JavaScript and MERN stack

@@ -100,7 +100,7 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-opacity-95 transform bg-slate-900 ${
+        className={`fixed top-0 w-full h-full bg-opacity-95 transform bg-slate-900 ${
           isSidebarVisible ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >

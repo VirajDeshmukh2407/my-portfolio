@@ -1,22 +1,10 @@
-// import React from "react";
-
-// const LoadingSpinner = () => {
-//   return (
-//     <div className="flex justify-center items-center min-h-screen">
-//       <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-32 w-32"></div>
-//     </div>
-//   );
-// };
-
-// export default LoadingSpinner;
-
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import "../pages/effect.css";
 const LoadingSpinner = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-r glowing-effect from-slate-500 to-slate-900">
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-r glowing-effect from-slate-600 to-slate-900">
       <div className="relative">
         <div className="absolute inset-0 flex items-center justify-center">
           <FontAwesomeIcon

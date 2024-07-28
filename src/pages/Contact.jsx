@@ -30,6 +30,7 @@ const Contact = () => {
     AOS.init({
       duration: 4000,
       once: false,
+      mirror: true,
     });
   }, []);
 
@@ -78,7 +79,9 @@ const Contact = () => {
       className=" text-white container mx-auto px-4 py-8 bg-gradient-custom glow-effect"
       data-aos="fade-up"
     >
-      <h1 className="text-2xl font-bold mb-2 px-5 text-center">Contact Me</h1>
+      <h1 className="text-2xl font-bold mb-2 px-5 text-center">
+        <span className="text-orange-500">Contact</span> Me
+      </h1>
 
       <div className="flex flex-col md:flex-row">
         {/* Left Section with Contact Me */}
