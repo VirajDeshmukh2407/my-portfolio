@@ -100,12 +100,12 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`fixed top-0 w-full h-full bg-opacity-95 transform bg-slate-900 ${
-          isSidebarVisible ? "translate-x-0" : "-translate-x-full"
+        className={`fixed top-11 right-0 h-auto w-40 bg-opacity-95 transform bg-black rounded-lg ${
+          isSidebarVisible ? "translate-x-full" : "-translate-x-0"
         } transition-transform duration-300 ease-in-out`}
       >
         <div className="flex flex-col space-y-4 p-2 mr-2">
-          <button onClick={hideSidebar} className="self-end focus:outline-none">
+          {/* <button onClick={hideSidebar} className="self-end focus:outline-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24"
@@ -118,11 +118,11 @@ const Header = () => {
                 fill="white"
               />
             </svg>
-          </button>
-          <div className="flex flex-col text-center space-y-10">
+          </button> */}
+          <div className="flex flex-col text-center space-y-6">
             <a
               href="#homesection"
-              className="text-gray-200 hover: mt-6"
+              className="text-gray-200 hover: mt-0"
               onClick={hideSidebar}
             >
               Home
@@ -150,7 +150,7 @@ const Header = () => {
             </a>
             <a
               href="#contactsection"
-              className="text-gray-200 hover:"
+              className="text-gray-200 mb-5 hover:"
               onClick={hideSidebar}
             >
               Contact Me

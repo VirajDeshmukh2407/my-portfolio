@@ -56,7 +56,8 @@ const Contact = () => {
         "service_u5j3g1e",
         "template_pdokg83",
         e.target,
-        "ENEifa-l1wdpYm8_k"
+        // "ENEifa-l1wdpYm8_k"
+        "6nV3Zk0aW2kEhlmtY"
       );
 
       setFormData({
